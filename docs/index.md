@@ -1,5 +1,5 @@
 ---
-title: Welcome
+title: EGR314 Team 304
 tags:
 - tag1
 - tag2
