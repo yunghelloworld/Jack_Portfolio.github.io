@@ -426,6 +426,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#my-goal" class="md-nav__link">
+    My Goal
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -522,6 +529,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#my-goal" class="md-nav__link">
+    My Goal
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -553,7 +567,7 @@
 <table>
 <thead>
 <tr>
-<th>ESP Info</th>
+<th>Actuator</th>
 <th>Pros</th>
 <th>Cons</th>
 </tr>
@@ -571,6 +585,8 @@
 </tr>
 </tbody>
 </table>
+<p>Chosen Solution: <a href="https://www.progressiveautomations.com/products/pa-mc1?_pos=1&amp;_fid=1a032d801&amp;_ss=c">IP65 Micro Linear Actuator</a></p>
+<p>Rationale: This is by far the cheapest and most efficient actuator for our project. Since the actuator does not require substantial force or reach, as it is part of a simple game mechanic, this cheap actuator can fit all the necessary purposes while fitting within the budget.</p>
 <h2 id="microcontroller">Microcontroller</h2>
 <p>The model used in my subsystem will be the <a href="https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-WROOM-1-N4/16162639">ESP32-S3-WROOM-1_N4</a>. This is the surface mount version of the microcontroller used in our labs.</p>
 <table>
@@ -667,7 +683,7 @@
 <tr>
 <td>UART</td>
 <td>3</td>
-<td>0</td>
+<td>1</td>
 <td>?</td>
 </tr>
 <tr>
@@ -715,6 +731,11 @@
 </tbody>
 </table>
 <p>* The ESP32-S2 has multiple SPI interfaces, but some are for internal use</p>
+<p>I have decided to go with the ESP32 WROOM as it is a surface mount microcontroller that provides all the necessary ports for my project, as it includes various PWM, SPI, UART, and GPIO pins, and transfers information at a high speed, making it ideal to use when communicating with the other subsystems my team has.</p>
+<p><a class="glightbox" href="https://github.com/user-attachments/assets/05aadfef-9e8a-4a68-974e-4e48876619f8" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="AR3260-ESP32-S3-WROOM-1-N16R8-16MB-FLASH-8MB-PSRAM-Pinout" src="https://github.com/user-attachments/assets/05aadfef-9e8a-4a68-974e-4e48876619f8" /></a></p>
+<p>The EN and 3v3 will be connected, the GND pins will go to the necessary grounds, and the various GPIO pins will encompass PWMs, ADCs, UARTs, and SPIs and will be defined as their respective inputs/outputs.</p>
+<h2 id="my-goal">My Goal</h2>
+<p>My subsystem uses actuation in order to enhance a game mechanic as well as send information back to the other subsystems once the actuator hits the pushbutton and the game is complete. This will reset the programming of the rest of the subsystems so the game is refreshed and ready to be played by the next audience member.</p>
 
 
 
