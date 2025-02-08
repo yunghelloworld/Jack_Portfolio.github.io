@@ -8,11 +8,14 @@ title: Component Selection
 
 An actuator will be used to add more visual drama to our exhibit. When an audience member gains a point, the actuator will extend, and when an audience member loses the point, the actuator will retract. When the actuator hits a pushbutton (also assigned to my subsystem) the audience member has won the game and the actuator will retract to its original position. Here are a few possible solutions
 
-| ESP Info                                      | Pros                                                        | Cons                                                                   |
+| Actuator                                      | Pros                                                        | Cons                                                                   |
 | --------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------- |
 | Solution 1 [Micro Linear Actuator](https://www.progressiveautomations.com/products/micro-linear-actuator?_pos=2&_fid=1a032d801&_ss=c) ![PA-07-5](https://github.com/user-attachments/assets/11a96e25-3cc1-4ccd-9e4e-5b7cbe82352e)                                  | Increased length,                                         | More expensive, less dynamic force, less speed                                                                       |
 | Solution 2 [IP65 Micro Linear Actuator](https://www.progressiveautomations.com/products/pa-mc1?_pos=1&_fid=1a032d801&_ss=c) ![PA-MC1_main2](https://github.com/user-attachments/assets/de38046c-76fd-42ea-a370-c1d71d842808)                                  | Cheaper, faster speed, greater force                                                             | Less length (4 inches shorter than other solution)                                                                        |
 
+Chosen Solution: [IP65 Micro Linear Actuator](https://www.progressiveautomations.com/products/pa-mc1?_pos=1&_fid=1a032d801&_ss=c)
+
+Rationale: This is by far the cheapest and most efficient actuator for our project. Since the actuator does not require substantial force or reach, as it is part of a simple game mechanic, this cheap actuator can fit all the necessary purposes while fitting within the budget.
 
 ## Microcontroller
 
@@ -37,7 +40,7 @@ The model used in my subsystem will be the [ESP32-S3-WROOM-1_N4](https://www.dig
 
 | Module         | # Available | Needed | Associated Pins (or * for any) |
 | -------------- | ----------- | ------ | ------------------------------ |
-| UART           | 3           | 0      | ?                              |
+| UART           | 3           | 1      | ?                              |
 | external SPI\* | 2           | 1      | ?                              |
 | I2C            | 2           | 0      | ?                              |
 | GPIO           | 36          | 1      | ?                              |
@@ -46,6 +49,15 @@ The model used in my subsystem will be the [ESP32-S3-WROOM-1_N4](https://www.dig
 | Motor PWM      | 36          | 2      | ?                              |
 | USB Programmer | 1           | 1      | ?                              |
 
-
-
 \* The ESP32-S2 has multiple SPI interfaces, but some are for internal use
+
+I have decided to go with the ESP32 WROOM as it is a surface mount microcontroller that provides all the necessary ports for my project, as it includes various PWM, SPI, UART, and GPIO pins, and transfers information at a high speed, making it ideal to use when communicating with the other subsystems my team has.
+
+![AR3260-ESP32-S3-WROOM-1-N16R8-16MB-FLASH-8MB-PSRAM-Pinout](https://github.com/user-attachments/assets/05aadfef-9e8a-4a68-974e-4e48876619f8)
+
+The EN and 3v3 will be connected, the GND pins will go to the necessary grounds, and the various GPIO pins will encompass PWMs, ADCs, UARTs, and SPIs and will be defined as their respective inputs/outputs.
+
+## My Goal
+
+My subsystem uses actuation in order to enhance a game mechanic as well as send information back to the other subsystems once the actuator hits the pushbutton and the game is complete. This will reset the programming of the rest of the subsystems so the game is refreshed and ready to be played by the next audience member.
+
