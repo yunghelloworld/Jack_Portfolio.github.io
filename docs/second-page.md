@@ -10,8 +10,8 @@ An actuator will be used to add more visual drama to our exhibit. When an audien
 
 | ESP Info                                      | Pros                                                        | Cons                                                                   |
 | --------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------- |
-| Solution 1 [Micro Linear Actuator](https://www.progressiveautomations.com/products/micro-linear-actuator?_pos=2&_fid=1a032d801&_ss=c)                                   | Increased length,                                         | More expensive, less dynamic force, less speed                                                                       |
-| Solution 2 [IP65 Micro Linear Actuator](https://www.progressiveautomations.com/products/pa-mc1?_pos=1&_fid=1a032d801&_ss=c)                                   | Cheaper, faster speed, greater force                                                             | Less length (4 inches shorter than other solution)                                                                        |
+| Solution 1 [Micro Linear Actuator](https://www.progressiveautomations.com/products/micro-linear-actuator?_pos=2&_fid=1a032d801&_ss=c) ![PA-07-5](https://github.com/user-attachments/assets/11a96e25-3cc1-4ccd-9e4e-5b7cbe82352e)                                  | Increased length,                                         | More expensive, less dynamic force, less speed                                                                       |
+| Solution 2 [IP65 Micro Linear Actuator](https://www.progressiveautomations.com/products/pa-mc1?_pos=1&_fid=1a032d801&_ss=c) ![PA-MC1_main2](https://github.com/user-attachments/assets/de38046c-76fd-42ea-a370-c1d71d842808)                                  | Cheaper, faster speed, greater force                                                             | Less length (4 inches shorter than other solution)                                                                        |
 
 
 ## Microcontroller
