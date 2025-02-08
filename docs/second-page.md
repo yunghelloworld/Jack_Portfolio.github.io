@@ -59,5 +59,5 @@ The EN and 3v3 will be connected, the GND pins will go to the necessary grounds,
 
 ## My Goal
 
-My subsystem uses actuation in order to enhance a game mechanic as well as send information back to the other subsystems once the actuator hits the pushbutton and the game is complete. This will reset the programming of the rest of the subsystems so the game is refreshed and ready to be played by the next audience member.
+This subsystem uses actuation in order to enhance a game mechanic as well as send information back to the other subsystems once the actuator hits the pushbutton and the game is complete. This will reset the programming of the rest of the subsystems so the game is refreshed and ready to be played by the next audience member.
 
