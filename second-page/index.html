@@ -92,6 +92,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#this-page-will-discuss-the-details-of-the-components-that-my-system-uses" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -366,6 +371,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Component Selection
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -375,6 +391,44 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#this-page-will-discuss-the-details-of-the-components-that-my-system-uses" class="md-nav__link">
+    This page will discuss the details of the components that my system uses.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actuator" class="md-nav__link">
+    Actuator
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#microcontroller" class="md-nav__link">
+    Microcontroller
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -441,6 +495,35 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#this-page-will-discuss-the-details-of-the-components-that-my-system-uses" class="md-nav__link">
+    This page will discuss the details of the components that my system uses.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actuator" class="md-nav__link">
+    Actuator
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#microcontroller" class="md-nav__link">
+    Microcontroller
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -464,7 +547,32 @@
 
   <h1>Component Selection</h1>
 
-<p>This page will discuss the details of the components that my system uses.</p>
+<h2 id="this-page-will-discuss-the-details-of-the-components-that-my-system-uses">This page will discuss the details of the components that my system uses.</h2>
+<h2 id="actuator">Actuator</h2>
+<p>An actuator will be used to add more visual drama to our exhibit. When an audience member gains a point, the actuator will extend, and when an audience member loses the point, the actuator will retract. When the actuator hits a pushbutton (also assigned to my subsystem) the audience member has won the game and the actuator will retract to its original position. Here are a few possible solutions</p>
+<table>
+<thead>
+<tr>
+<th>ESP Info</th>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Solution 1 <a href="https://www.progressiveautomations.com/products/micro-linear-actuator?_pos=2&amp;_fid=1a032d801&amp;_ss=c">Micro Linear Actuator</a></td>
+<td>Increased length,</td>
+<td>More expensive, less dynamic force, less speed</td>
+</tr>
+<tr>
+<td>Solution 2 <a href="https://www.progressiveautomations.com/products/pa-mc1?_pos=1&amp;_fid=1a032d801&amp;_ss=c">IP65 Micro Linear Actuator</a></td>
+<td>Cheaper, faster speed, greater force</td>
+<td>Less length (4 inches shorter than other solution)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="microcontroller">Microcontroller</h2>
+<p>The model used in my subsystem will be the <a href="https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-WROOM-1-N4/16162639">ESP32-S3-WROOM-1_N4</a>. This is the surface mount version of the microcontroller used in our labs.</p>
 <table>
 <thead>
 <tr>
@@ -476,77 +584,72 @@
 <tbody>
 <tr>
 <td>Model</td>
-<td>?</td>
+<td>ESP32-S3-WROOM-1 N4</td>
 <td>Include the entire part number (leave off any letters at the end that specify the package type)</td>
 </tr>
 <tr>
 <td>Product Page URL</td>
-<td>?</td>
+<td><a href="https://www.espressif.com/en/producttype/esp32-wroom-32">Product URL</a></td>
 <td>Found on Espressif.com</td>
 </tr>
 <tr>
 <td>ESP32-S3-WROOM-1-N4 Datasheet URL</td>
-<td>?</td>
+<td><a href="https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf">WROOM Datasheet</a></td>
 <td>Do not paste links directly into the table.  Use a <a href="#">link</a></td>
 </tr>
 <tr>
 <td>ESP32 S3 Datasheet URL</td>
-<td>?</td>
+<td><a href="https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf">ESP32 Datasheet</a></td>
 <td>Has more detail on functions</td>
 </tr>
 <tr>
 <td>ESP32 S3 Technical Reference Manual URL</td>
-<td>?</td>
+<td><a href="https://www.espressif.com/sites/default/files/documentation/esp32-s3_technical_reference_manual_en.pdf">Technical Reference Manual</a></td>
 <td>Has details on I/O multiplexing, USB, and others</td>
 </tr>
 <tr>
 <td>Vendor link</td>
-<td>?</td>
+<td><a href="https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-WROOM-1-N4/16162639">Digikey</a></td>
 <td>Digikey, Jameco, etc.  Do not paste links directly into the table.  Use a <a href="#">link</a></td>
 </tr>
 <tr>
 <td>Code Examples</td>
-<td>?</td>
+<td><a href="https://github.com/espressif/arduino-esp32/blob/master/libraries/WiFi/examples/SimpleWiFiServer/SimpleWiFiServer.ino">Simple Wifi Server</a></td>
 <td>url(s) for libraries on github or other sites related to the microcontroller and your planned peripherals</td>
 </tr>
 <tr>
 <td>External Resources URL(s)</td>
-<td>?</td>
+<td><a href="https://youtu.be/xPlN_Tk3VLQ">Introduction Video</a></td>
 <td>Search on Google and YouTube for other resources for each specific microcontroller.</td>
 </tr>
 <tr>
 <td>Unit cost</td>
-<td>?</td>
+<td>$2.95</td>
 <td>Find on Digikey, Jameco, MPJA, or octopart</td>
 </tr>
 <tr>
 <td>Absolute Maximum Current for entire IC</td>
-<td>?</td>
+<td>355mA</td>
 <td>Find in the microcontroller datasheet</td>
 </tr>
 <tr>
 <td>Supply Voltage Range</td>
-<td>?</td>
+<td>3V~3.6V</td>
 <td>Min / Nominal / Max / Absolute Max, as found in datasheet</td>
 </tr>
 <tr>
-<td>Absolute Maximum current <br> (for entire IC)</td>
-<td>?</td>
-<td>as found in datasheet</td>
-</tr>
-<tr>
 <td>Maximum GPIO current <br> (per pin)</td>
-<td>?</td>
+<td>97mA</td>
 <td>as found in datasheet</td>
 </tr>
 <tr>
 <td>Supports External Interrupts?</td>
-<td>?</td>
+<td>Yes</td>
 <td>as found in datasheet</td>
 </tr>
 <tr>
 <td>Required Programming Hardware, Cost, URL</td>
-<td>?</td>
+<td><a href="https://code.visualstudio.com/">VSCode</a> Free</td>
 <td>as found in datasheet</td>
 </tr>
 </tbody>
@@ -563,57 +666,51 @@
 <tbody>
 <tr>
 <td>UART</td>
-<td>?</td>
-<td>?</td>
+<td>3</td>
+<td>0</td>
 <td>?</td>
 </tr>
 <tr>
 <td>external SPI*</td>
-<td>?</td>
-<td>?</td>
-<td>?</td>
-</tr>
-<tr>
-<td>I2C</td>
-<td>?</td>
-<td>?</td>
-<td>?</td>
-</tr>
-<tr>
-<td>GPIO</td>
-<td>?</td>
-<td>?</td>
-<td>?</td>
-</tr>
-<tr>
-<td>ADC</td>
-<td>?</td>
-<td>?</td>
-<td>?</td>
-</tr>
-<tr>
-<td>LED PWM</td>
-<td>?</td>
-<td>?</td>
-<td>?</td>
-</tr>
-<tr>
-<td>Motor PWM</td>
-<td>?</td>
-<td>?</td>
-<td>?</td>
-</tr>
-<tr>
-<td>USB Programmer</td>
-<td>?</td>
+<td>2</td>
 <td>1</td>
 <td>?</td>
 </tr>
 <tr>
-<td>...</td>
-<td></td>
-<td></td>
-<td></td>
+<td>I2C</td>
+<td>2</td>
+<td>0</td>
+<td>?</td>
+</tr>
+<tr>
+<td>GPIO</td>
+<td>36</td>
+<td>1</td>
+<td>?</td>
+</tr>
+<tr>
+<td>ADC</td>
+<td>20</td>
+<td>2</td>
+<td>?</td>
+</tr>
+<tr>
+<td>LED PWM</td>
+<td>36</td>
+<td>0</td>
+<td>?</td>
+</tr>
+<tr>
+<td>Motor PWM</td>
+<td>36</td>
+<td>2</td>
+<td>?</td>
+</tr>
+<tr>
+<td>USB Programmer</td>
+<td>1</td>
+<td>1</td>
+<td>?</td>
 </tr>
 </tbody>
 </table>
