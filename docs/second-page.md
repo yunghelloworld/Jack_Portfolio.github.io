@@ -32,12 +32,13 @@ Rationale: Although not cheaper than the other option, it outweighs the other po
 
 | Solution                                      | Pros                                                        | Cons                                                                   |
 | --------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------- |
-| Solution 1 [MIC29302WU](https://www.digikey.com/en/products/detail/microchip-technology/MIC29302WU-TR/771594) ![576-TO-263-5](https://github.com/user-attachments/assets/e86b50a8-b0ed-4a03-b34a-83cfe15ff275)| Increased length, more power, sufficient aperage, greater efficiency  | More expensive|
-| Solution 2 [LM2575T](https://www.digikey.com/en/products/detail/texas-instruments/LM2575T-12-NOPB/212630) ![296~4040208~KC~5](https://github.com/user-attachments/assets/926bc5b7-204d-465a-ac84-0c97c5abb647)| Cheaper                                                          | Less amperage, less heat tolerance, less power        |
+| Solution 1 [MIC29302WU](https://www.digikey.com/en/products/detail/microchip-technology/MIC29302WU-TR/771594) ![576-TO-263-5](https://github.com/user-attachments/assets/e86b50a8-b0ed-4a03-b34a-83cfe15ff275)| Surface mount, increased amperage if necessary, higher voltage output, shorter manufacturer time, cheaper | Lower voltage input, less familiar with technology |
+| Solution 2 [LM2575T](https://www.digikey.com/en/products/detail/onsemi/LM2575T-ADJG/918471) ![296~4040208~KC~5](https://github.com/user-attachments/assets/926bc5b7-204d-465a-ac84-0c97c5abb647)| Familiar with technology, larger range of voltage outputs                                                        | More expensive, through hole        |
+| Solution 3 [LM2575D2T](https://www.digikey.com/en/products/detail/onsemi/LM2575D2T-3-3G/1476686) ![488~936A-02~DS,D2T~5](https://github.com/user-attachments/assets/5b067c1c-41a9-4358-913f-ba007e9f3530)| Similar stats as above solution but surface mount, cheaper                                                         | Fixed output        |
 
-Chosen Solution: [VEL12US120-US-JA](https://www.digikey.com/en/products/detail/xp-power/VEL12US120-US-JA/5726833)
+Chosen Solution: [LM2575D2T](https://www.digikey.com/en/products/detail/onsemi/LM2575D2T-3-3G/1476686)
 
-Rationale: Although not cheaper than the other option, it outweighs the other power supply in almost all stats in terms of performance. The amperage will be high for the microcontroller but can be easily regulated.
+Rationale: It has the LM2575 technology I am more familiar with as well as being surface mount, which is a requirement for this project. Although the output is fixed at 3.3V, this does not inhibit my system at all as 3.3V is enough to supply the logic of both my microcontroller and my motor driver.
 
 ## Microcontroller
 
