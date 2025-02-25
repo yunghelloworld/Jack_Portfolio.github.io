@@ -8,7 +8,7 @@ title: Component Selection
 
 An actuator will be used to add more visual drama to our exhibit. When an audience member gains a point, the actuator will extend, and when an audience member loses the point, the actuator will retract. When the actuator hits a pushbutton (also assigned to my subsystem) the audience member has won the game and the actuator will retract to its original position. Here are a few possible solutions
 
-| Actuator                                      | Pros                                                        | Cons                                                                   |
+| Solution                                      | Pros                                                        | Cons                                                                   |
 | --------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------- |
 | Solution 1 [Micro Linear Actuator](https://www.progressiveautomations.com/products/micro-linear-actuator?_pos=2&_fid=1a032d801&_ss=c) ![PA-07-5](https://github.com/user-attachments/assets/11a96e25-3cc1-4ccd-9e4e-5b7cbe82352e)                                  | Increased length,                                         | More expensive, less dynamic force, less speed                                                                       |
 | Solution 2 [IP65 Micro Linear Actuator](https://www.progressiveautomations.com/products/pa-mc1?_pos=1&_fid=1a032d801&_ss=c) ![PA-MC1_main2](https://github.com/user-attachments/assets/de38046c-76fd-42ea-a370-c1d71d842808)                                  | Cheaper, faster speed, greater force                                                             | Less length (4 inches shorter than other solution)                                                                        |
@@ -17,7 +17,18 @@ Chosen Solution: [IP65 Micro Linear Actuator](https://www.progressiveautomations
 
 Rationale: This is by far the cheapest and most efficient actuator for our project. Since the actuator does not require substantial force or reach, as it is part of a simple game mechanic, this cheap actuator can fit all the necessary purposes while fitting within the budget.
 
-## Power Supply
+## Power Supply (Wall Mount)
+
+| Solution                                      | Pros                                                        | Cons                                                                   |
+| --------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------- |
+| Solution 1 [VEL12US120-US-JA](https://www.digikey.com/en/products/detail/xp-power/VEL12US120-US-JA/5726833) ![MFG_VEL12-US_dist](https://github.com/user-attachments/assets/66bcf602-d8a4-41f8-b548-d566fcb2cf47)
+                                 | Increased length, more power, sufficient aperage, greater efficiency                                        | More expensive                                                                       |
+| Solution 2 [L6R06H-120](https://www.digikey.com/en/products/detail/tri-mag-llc/L6R06H-120/7682617?gQT=1) ![Tri-Mag,L6R06H_Barrel-Plug](https://github.com/user-attachments/assets/611d6f9d-4754-4d69-82dc-c9f6d3ae8ddd)
+                                  | Cheaper                                                          | Less amperage, less heat tolerance, less power        |
+                                  
+Chosen Solution: [VEL12US120-US-JA](https://www.digikey.com/en/products/detail/xp-power/VEL12US120-US-JA/5726833)
+
+Rationale: Although not cheaper than the other option, it outweighs the other power supply in almost all stats in terms of performance. The amperage will be high for the microcontroller but can be easily regulated.
 
 ## Voltage Regulator
 
