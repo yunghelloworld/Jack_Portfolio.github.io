@@ -427,6 +427,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#motor-driver" class="md-nav__link">
+    Motor Driver
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#voltage-regulator" class="md-nav__link">
     Voltage Regulator
   </a>
@@ -544,6 +551,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#motor-driver" class="md-nav__link">
+    Motor Driver
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#voltage-regulator" class="md-nav__link">
     Voltage Regulator
   </a>
@@ -639,6 +653,35 @@
 </table>
 <p>Chosen Solution: <a href="https://www.digikey.com/en/products/detail/xp-power/VEL12US120-US-JA/5726833">VEL12US120-US-JA</a></p>
 <p>Rationale: Although not cheaper than the other option, it outweighs the other power supply in almost all stats in terms of performance. The amperage will be high for the microcontroller but can be easily regulated.</p>
+<h2 id="motor-driver">Motor Driver</h2>
+<table>
+<thead>
+<tr>
+<th>Solution</th>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Solution 1 <a href="https://www.digikey.com/en/products/detail/infineon-technologies/IFX9201SGAUMA1/5415542?s=N4IgTCBcDaIJIDEAaBOMAGAjAZQOIEEBVAWX0xAF0BfIA">IFX9201SG</a> <a class="glightbox" href="https://github.com/user-attachments/assets/b3b52847-73ef-4240-a025-97c41bb56031" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="P-PG-DSO-12" src="https://github.com/user-attachments/assets/b3b52847-73ef-4240-a025-97c41bb56031" /></a></td>
+<td>Familiarity with technology, just enough pins, affordable</td>
+<td>Needs a 5V power source in order to function fully</td>
+</tr>
+<tr>
+<td>Solution 2 <a href="https://www.digikey.com/en/products/detail/stmicroelectronics/L2293QTR/1992180">L2293QTR</a> <a class="glightbox" href="https://github.com/user-attachments/assets/07787b88-f1be-4acb-9b05-df7d1024afb6" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="497_32-QFN Pkg" src="https://github.com/user-attachments/assets/07787b88-f1be-4acb-9b05-df7d1024afb6" /></a></td>
+<td>Lower supply threshold</td>
+<td>More pins than necessary, difficult to solder</td>
+</tr>
+<tr>
+<td>Solution 3 <a href="https://www.digikey.com/en/products/detail/onsemi/NCV7703CD2R2G/7325621">NCV7703CD2R2G</a> <a class="glightbox" href="https://github.com/user-attachments/assets/27986868-e51b-4cf6-9a00-ea5ca3e46354" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="488~751A-03~D,-R,-W~14" src="https://github.com/user-attachments/assets/27986868-e51b-4cf6-9a00-ea5ca3e46354" /></a></td>
+<td>Lower enough supply threshold to support 3.3V with a decent load range</td>
+<td>Less detailed datasheet compared to other solutions, less familiar technology</td>
+</tr>
+</tbody>
+</table>
+<p>Chosen Solution: <a href="https://www.digikey.com/en/products/detail/onsemi/NCV7703CD2R2G/7325621">NCV7703CD2R2G</a></p>
+<p>Rationale: It has the simple pin layout of the IFX9201SG along with the ability to use 3.3V supply for logic exclusively, making it the best out of the other options for this project.</p>
 <h2 id="voltage-regulator">Voltage Regulator</h2>
 <table>
 <thead>
