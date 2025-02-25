@@ -651,18 +651,23 @@
 <tbody>
 <tr>
 <td>Solution 1 <a href="https://www.digikey.com/en/products/detail/microchip-technology/MIC29302WU-TR/771594">MIC29302WU</a> <a class="glightbox" href="https://github.com/user-attachments/assets/e86b50a8-b0ed-4a03-b34a-83cfe15ff275" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="576-TO-263-5" src="https://github.com/user-attachments/assets/e86b50a8-b0ed-4a03-b34a-83cfe15ff275" /></a></td>
-<td>Increased length, more power, sufficient aperage, greater efficiency</td>
-<td>More expensive</td>
+<td>Surface mount, increased amperage if necessary, higher voltage output, shorter manufacturer time, cheaper</td>
+<td>Lower voltage input, less familiar with technology</td>
 </tr>
 <tr>
-<td>Solution 2 <a href="https://www.digikey.com/en/products/detail/texas-instruments/LM2575T-12-NOPB/212630">LM2575T</a> <a class="glightbox" href="https://github.com/user-attachments/assets/926bc5b7-204d-465a-ac84-0c97c5abb647" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="296~4040208~KC~5" src="https://github.com/user-attachments/assets/926bc5b7-204d-465a-ac84-0c97c5abb647" /></a></td>
-<td>Cheaper</td>
-<td>Less amperage, less heat tolerance, less power</td>
+<td>Solution 2 <a href="https://www.digikey.com/en/products/detail/onsemi/LM2575T-ADJG/918471">LM2575T</a> <a class="glightbox" href="https://github.com/user-attachments/assets/926bc5b7-204d-465a-ac84-0c97c5abb647" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="296~4040208~KC~5" src="https://github.com/user-attachments/assets/926bc5b7-204d-465a-ac84-0c97c5abb647" /></a></td>
+<td>Familiar with technology, larger range of voltage outputs</td>
+<td>More expensive, through hole</td>
+</tr>
+<tr>
+<td>Solution 3 <a href="https://www.digikey.com/en/products/detail/onsemi/LM2575D2T-3-3G/1476686">LM2575D2T</a> <a class="glightbox" href="https://github.com/user-attachments/assets/5b067c1c-41a9-4358-913f-ba007e9f3530" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="488~936A-02~DS,D2T~5" src="https://github.com/user-attachments/assets/5b067c1c-41a9-4358-913f-ba007e9f3530" /></a></td>
+<td>Similar stats as above solution but surface mount, cheaper</td>
+<td>Fixed output</td>
 </tr>
 </tbody>
 </table>
-<p>Chosen Solution: <a href="https://www.digikey.com/en/products/detail/xp-power/VEL12US120-US-JA/5726833">VEL12US120-US-JA</a></p>
-<p>Rationale: Although not cheaper than the other option, it outweighs the other power supply in almost all stats in terms of performance. The amperage will be high for the microcontroller but can be easily regulated.</p>
+<p>Chosen Solution: <a href="https://www.digikey.com/en/products/detail/onsemi/LM2575D2T-3-3G/1476686">LM2575D2T</a></p>
+<p>Rationale: It has the LM2575 technology I am more familiar with as well as being surface mount, which is a requirement for this project. Although the output is fixed at 3.3V, this does not inhibit my system at all as 3.3V is enough to supply the logic of both my microcontroller and my motor driver.</p>
 <h2 id="microcontroller">Microcontroller</h2>
 <p>The model used in my subsystem will be the <a href="https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-WROOM-1-N4/16162639">ESP32-S3-WROOM-1_N4</a>. This is the surface mount version of the microcontroller used in our labs.</p>
 <table>
