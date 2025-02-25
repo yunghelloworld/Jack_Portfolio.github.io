@@ -4,3 +4,6 @@
 ![Schematic](https://github.com/user-attachments/assets/76c9005a-bf3a-4fa7-b2dc-561751cd815d)
 ![MotorDriver drawio](https://github.com/user-attachments/assets/6120f6a4-2513-45f5-8b45-cfbd554fd360)
 ![296~4040208~KC~5](https://github.com/user-attachments/assets/926bc5b7-204d-465a-ac84-0c97c5abb647)
+![MFG_VEL12-US_dist](https://github.com/user-attachments/assets/66bcf602-d8a4-41f8-b548-d566fcb2cf47)
+![Tri-Mag,L6R06H_Barrel-Plug](https://github.com/user-attachments/assets/611d6f9d-4754-4d69-82dc-c9f6d3ae8ddd)
+![576-TO-263-5](https://github.com/user-attachments/assets/e86b50a8-b0ed-4a03-b34a-83cfe15ff275)
