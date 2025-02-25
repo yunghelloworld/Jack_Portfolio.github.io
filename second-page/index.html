@@ -420,8 +420,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#power-supply" class="md-nav__link">
-    Power Supply
+  <a href="#power-supply-wall-mount" class="md-nav__link">
+    Power Supply (Wall Mount)
   </a>
   
 </li>
@@ -537,8 +537,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#power-supply" class="md-nav__link">
-    Power Supply
+  <a href="#power-supply-wall-mount" class="md-nav__link">
+    Power Supply (Wall Mount)
   </a>
   
 </li>
@@ -595,7 +595,7 @@
 <table>
 <thead>
 <tr>
-<th>Actuator</th>
+<th>Solution</th>
 <th>Pros</th>
 <th>Cons</th>
 </tr>
@@ -615,7 +615,40 @@
 </table>
 <p>Chosen Solution: <a href="https://www.progressiveautomations.com/products/pa-mc1?_pos=1&amp;_fid=1a032d801&amp;_ss=c">IP65 Micro Linear Actuator</a></p>
 <p>Rationale: This is by far the cheapest and most efficient actuator for our project. Since the actuator does not require substantial force or reach, as it is part of a simple game mechanic, this cheap actuator can fit all the necessary purposes while fitting within the budget.</p>
-<h2 id="power-supply">Power Supply</h2>
+<h2 id="power-supply-wall-mount">Power Supply (Wall Mount)</h2>
+<table>
+<thead>
+<tr>
+<th>Solution</th>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Solution 1 <a href="https://www.digikey.com/en/products/detail/xp-power/VEL12US120-US-JA/5726833">VEL12US120-US-JA</a> <a class="glightbox" href="https://github.com/user-attachments/assets/66bcf602-d8a4-41f8-b548-d566fcb2cf47" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="MFG_VEL12-US_dist" src="https://github.com/user-attachments/assets/66bcf602-d8a4-41f8-b548-d566fcb2cf47" /></a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Increased length, more power, sufficient aperage, greater efficiency</td>
+<td>More expensive</td>
+<td></td>
+</tr>
+<tr>
+<td>Solution 2 <a href="https://www.digikey.com/en/products/detail/tri-mag-llc/L6R06H-120/7682617?gQT=1">L6R06H-120</a> <a class="glightbox" href="https://github.com/user-attachments/assets/611d6f9d-4754-4d69-82dc-c9f6d3ae8ddd" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Tri-Mag,L6R06H_Barrel-Plug" src="https://github.com/user-attachments/assets/611d6f9d-4754-4d69-82dc-c9f6d3ae8ddd" /></a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Cheaper</td>
+<td>Less amperage, less heat tolerance, less power</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Chosen Solution: <a href="https://www.digikey.com/en/products/detail/xp-power/VEL12US120-US-JA/5726833">VEL12US120-US-JA</a></p>
+<p>Rationale: Although not cheaper than the other option, it outweighs the other power supply in almost all stats in terms of performance. The amperage will be high for the microcontroller but can be easily regulated.</p>
 <h2 id="voltage-regulator">Voltage Regulator</h2>
 <h2 id="microcontroller">Microcontroller</h2>
 <p>The model used in my subsystem will be the <a href="https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-WROOM-1-N4/16162639">ESP32-S3-WROOM-1_N4</a>. This is the surface mount version of the microcontroller used in our labs.</p>
