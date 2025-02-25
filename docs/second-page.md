@@ -35,6 +35,10 @@ Rationale: Although not cheaper than the other option, it outweighs the other po
 | Solution 1 [MIC29302WU](https://www.digikey.com/en/products/detail/microchip-technology/MIC29302WU-TR/771594) ![576-TO-263-5](https://github.com/user-attachments/assets/e86b50a8-b0ed-4a03-b34a-83cfe15ff275)| Increased length, more power, sufficient aperage, greater efficiency  | More expensive|
 | Solution 2 [LM2575T](https://www.digikey.com/en/products/detail/texas-instruments/LM2575T-12-NOPB/212630) ![296~4040208~KC~5](https://github.com/user-attachments/assets/926bc5b7-204d-465a-ac84-0c97c5abb647)| Cheaper                                                          | Less amperage, less heat tolerance, less power        |
 
+Chosen Solution: [VEL12US120-US-JA](https://www.digikey.com/en/products/detail/xp-power/VEL12US120-US-JA/5726833)
+
+Rationale: Although not cheaper than the other option, it outweighs the other power supply in almost all stats in terms of performance. The amperage will be high for the microcontroller but can be easily regulated.
+
 ## Microcontroller
 
 The model used in my subsystem will be the [ESP32-S3-WROOM-1_N4](https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-WROOM-1-N4/16162639). This is the surface mount version of the microcontroller used in our labs.
