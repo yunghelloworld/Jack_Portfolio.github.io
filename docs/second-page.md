@@ -28,6 +28,18 @@ Chosen Solution: [VEL12US120-US-JA](https://www.digikey.com/en/products/detail/x
 
 Rationale: Although not cheaper than the other option, it outweighs the other power supply in almost all stats in terms of performance. The amperage will be high for the microcontroller but can be easily regulated.
 
+## Motor Driver
+
+| Solution                                      | Pros                                                        | Cons                                                                   |
+| --------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------- |
+| Solution 1 [IFX9201SG](https://www.digikey.com/en/products/detail/infineon-technologies/IFX9201SGAUMA1/5415542?s=N4IgTCBcDaIJIDEAaBOMAGAjAZQOIEEBVAWX0xAF0BfIA) ![P-PG-DSO-12](https://github.com/user-attachments/assets/b3b52847-73ef-4240-a025-97c41bb56031) | Familiarity with technology, just enough pins, affordable  | Needs a 5V power source in order to function fully|
+| Solution 2 [L2293QTR](https://www.digikey.com/en/products/detail/stmicroelectronics/L2293QTR/1992180) ![497_32-QFN Pkg](https://github.com/user-attachments/assets/07787b88-f1be-4acb-9b05-df7d1024afb6) | Lower supply threshold                                                          | More pins than necessary, difficult to solder       |
+| Solution 3 [NCV7703CD2R2G](https://www.digikey.com/en/products/detail/onsemi/NCV7703CD2R2G/7325621) ![488~751A-03~D,-R,-W~14](https://github.com/user-attachments/assets/27986868-e51b-4cf6-9a00-ea5ca3e46354) | Lower enough supply threshold to support 3.3V with a decent load range             | Less detailed datasheet compared to other solutions, less familiar technology   
+
+Chosen Solution: [NCV7703CD2R2G](https://www.digikey.com/en/products/detail/onsemi/NCV7703CD2R2G/7325621)
+
+Rationale: It has the simple pin layout of the IFX9201SG along with the ability to use 3.3V supply for logic exclusively, making it the best out of the other options for this project.
+
 ## Voltage Regulator
 
 | Solution                                      | Pros                                                        | Cons                                                                   |
