@@ -5,4 +5,4 @@ title: Block Diagram
 
 ## Block Diagram for my Subsystem
 
-![Block Diagram-314 drawio (2)](https://github.com/user-attachments/assets/42de3a54-d50d-4b4d-a1be-8506f3a9dca0)
+![MotorDriver drawio](https://github.com/user-attachments/assets/6120f6a4-2513-45f5-8b45-cfbd554fd360)
