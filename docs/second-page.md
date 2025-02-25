@@ -6,7 +6,7 @@ title: Component Selection
 
 ## Actuator
 
-An actuator will be used to add more visual drama to our exhibit. When an audience member gains a point, the actuator will extend, and when an audience member loses the point, the actuator will retract. When the actuator hits a pushbutton (also assigned to my subsystem) the audience member has won the game and the actuator will retract to its original position. Here are a few possible solutions
+An actuator will be used to add more visual interest to our exhibit. When an audience member gains a point, the actuator will extend, and when an audience member loses the point, the actuator will retract. When the actuator hits a pushbutton (also assigned to my subsystem) it will send a message to the display confirming that the audience member has won the game and the actuator will retract to its original position. Here are a few possible solutions.
 
 | Solution                                      | Pros                                                        | Cons                                                                   |
 | --------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------- |
@@ -90,8 +90,4 @@ I have decided to go with the ESP32 WROOM as it is a surface mount microcontroll
 ![AR3260-ESP32-S3-WROOM-1-N16R8-16MB-FLASH-8MB-PSRAM-Pinout](https://github.com/user-attachments/assets/05aadfef-9e8a-4a68-974e-4e48876619f8)
 
 The EN and 3v3 will be connected, the GND pins will go to the necessary grounds, and the various GPIO pins will encompass PWMs, ADCs, UARTs, and SPIs and will be defined as their respective inputs/outputs.
-
-## My Goal
-
-This subsystem uses actuation in order to enhance a game mechanic as well as send information back to the other subsystems once the actuator hits the pushbutton and the game is complete. This will reset the programming of the rest of the subsystems so the game is refreshed and ready to be played by the next audience member.
 
