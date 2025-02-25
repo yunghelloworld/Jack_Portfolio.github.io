@@ -8,3 +8,6 @@
 ![Tri-Mag,L6R06H_Barrel-Plug](https://github.com/user-attachments/assets/611d6f9d-4754-4d69-82dc-c9f6d3ae8ddd)
 ![576-TO-263-5](https://github.com/user-attachments/assets/e86b50a8-b0ed-4a03-b34a-83cfe15ff275)
 ![488~936A-02~DS,D2T~5](https://github.com/user-attachments/assets/5b067c1c-41a9-4358-913f-ba007e9f3530)
+![P-PG-DSO-12](https://github.com/user-attachments/assets/b3b52847-73ef-4240-a025-97c41bb56031)
+![488~751A-03~D,-R,-W~14](https://github.com/user-attachments/assets/27986868-e51b-4cf6-9a00-ea5ca3e46354)
+![497_32-QFN Pkg](https://github.com/user-attachments/assets/07787b88-f1be-4acb-9b05-df7d1024afb6)
