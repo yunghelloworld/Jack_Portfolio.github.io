@@ -17,6 +17,10 @@ Chosen Solution: [IP65 Micro Linear Actuator](https://www.progressiveautomations
 
 Rationale: This is by far the cheapest and most efficient actuator for our project. Since the actuator does not require substantial force or reach, as it is part of a simple game mechanic, this cheap actuator can fit all the necessary purposes while fitting within the budget.
 
+## Power Supply
+
+## Voltage Regulator
+
 ## Microcontroller
 
 The model used in my subsystem will be the [ESP32-S3-WROOM-1_N4](https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-WROOM-1-N4/16162639). This is the surface mount version of the microcontroller used in our labs.
@@ -40,14 +44,13 @@ The model used in my subsystem will be the [ESP32-S3-WROOM-1_N4](https://www.dig
 
 | Module         | # Available | Needed | Associated Pins (or * for any) |
 | -------------- | ----------- | ------ | ------------------------------ |
-| UART           | 3           | 1      | ?                              |
-| external SPI\* | 2           | 1      | ?                              |
-| I2C            | 2           | 0      | ?                              |
-| GPIO           | 36          | 1      | ?                              |
-| ADC            | 20          | 2      | ?                              |
-| LED PWM        | 36          | 0      | ?                              |
-| Motor PWM      | 36          | 2      | ?                              |
-| USB Programmer | 1           | 1      | ?                              |
+| UART           | 2           | 2      | TXD0, RXD0                     |
+| I2C            | 2           | 0      | *                              |
+| GPIO           | 33          | 2      | *                              |
+| ADC            | 33          | 0      | *                              |
+| LED PWM        | 33          | 0      | *                              |
+| SPI            | 33          | 4      | *                              |
+| USB Programmer | 2           | 2      | IO19-20                        |
 
 \* The ESP32-S2 has multiple SPI interfaces, but some are for internal use
 
