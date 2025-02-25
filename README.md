@@ -3,3 +3,4 @@
 ![PA-MC1_main2](https://github.com/user-attachments/assets/de38046c-76fd-42ea-a370-c1d71d842808)
 ![AR3260-ESP32-S3-WROOM-1-N16R8-16MB-FLASH-8MB-PSRAM-Pinout](https://github.com/user-attachments/assets/05aadfef-9e8a-4a68-974e-4e48876619f8)
 ![Schematic](https://github.com/user-attachments/assets/76c9005a-bf3a-4fa7-b2dc-561751cd815d)
+![Block Diagram-314 drawio (2)](https://github.com/user-attachments/assets/42de3a54-d50d-4b4d-a1be-8506f3a9dca0)
