@@ -7,3 +7,4 @@
 ![MFG_VEL12-US_dist](https://github.com/user-attachments/assets/66bcf602-d8a4-41f8-b548-d566fcb2cf47)
 ![Tri-Mag,L6R06H_Barrel-Plug](https://github.com/user-attachments/assets/611d6f9d-4754-4d69-82dc-c9f6d3ae8ddd)
 ![576-TO-263-5](https://github.com/user-attachments/assets/e86b50a8-b0ed-4a03-b34a-83cfe15ff275)
+![488~936A-02~DS,D2T~5](https://github.com/user-attachments/assets/5b067c1c-41a9-4358-913f-ba007e9f3530)
