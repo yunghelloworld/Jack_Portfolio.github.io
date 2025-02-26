@@ -17,17 +17,6 @@ Chosen Solution: [IP65 Micro Linear Actuator](https://www.progressiveautomations
 
 Rationale: This is by far the cheapest and most efficient actuator for our project. Since the actuator does not require substantial force or reach, as it is part of a simple game mechanic, this cheap actuator can fit all the necessary purposes while fitting within the budget.
 
-## Power Supply (Wall Mount)
-
-| Solution                                      | Pros                                                        | Cons                                                                   |
-| --------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------- |
-| Solution 1 [VEL12US120-US-JA](https://www.digikey.com/en/products/detail/xp-power/VEL12US120-US-JA/5726833) ![MFG_VEL12-US_dist](https://github.com/user-attachments/assets/66bcf602-d8a4-41f8-b548-d566fcb2cf47)| Increased length, more power, sufficient aperage, greater efficiency  | More expensive|
-| Solution 2 [L6R06H-120](https://www.digikey.com/en/products/detail/tri-mag-llc/L6R06H-120/7682617?gQT=1) ![Tri-Mag,L6R06H_Barrel-Plug](https://github.com/user-attachments/assets/611d6f9d-4754-4d69-82dc-c9f6d3ae8ddd) | Cheaper                                                          | Less amperage, less heat tolerance, less power        |
-                                  
-Chosen Solution: [VEL12US120-US-JA](https://www.digikey.com/en/products/detail/xp-power/VEL12US120-US-JA/5726833)
-
-Rationale: Although not cheaper than the other option, it outweighs the other power supply in almost all stats in terms of performance. The amperage will be high for the microcontroller but can be easily regulated.
-
 ## Motor Driver
 
 | Solution                                      | Pros                                                        | Cons                                                                   |
