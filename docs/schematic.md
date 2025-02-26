@@ -12,3 +12,4 @@ tags:
 
 ## Power Budget
 
+![powerbudgetjack](https://github.com/user-attachments/assets/ed784e72-e6d4-452d-a33c-b954ae1266ec)
