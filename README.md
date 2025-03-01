@@ -18,3 +18,4 @@
 ![PowerBudget](https://github.com/user-attachments/assets/b50df31b-e70a-4d27-82db-5af75c8c3fc9)
 [Untitled spreadsheet - Power Budget.pdf](https://github.com/user-attachments/files/19037240/Untitled.spreadsheet.-.Power.Budget.pdf)
 [EGR-3x4-Purchase-Request-2021 DIGI KEY - Purchase Request.pdf](https://github.com/user-attachments/files/19037241/EGR-3x4-Purchase-Request-2021.DIGI.KEY.-.Purchase.Request.pdf)
+![Diagram314 drawio](https://github.com/user-attachments/assets/eb52a188-c0a7-4e2e-83ca-4f7cb84c3bc7)
