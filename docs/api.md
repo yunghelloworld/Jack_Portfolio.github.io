@@ -8,6 +8,13 @@ This page documents the API for my actuator subsystem and details the messages g
 
 ---
 
+### Start/Stop 
+
+| Start              | Stop |
+|-------------------|---------|
+| AZ                 | YB     |
+
+
 ### Team Addresses
 
 | Name              | Address |
@@ -59,8 +66,7 @@ This command tells the actuator to either extend or retract. The actuator extend
 
 | Byte(s) | Variable Name | Variable Type | Min Value | Max Value | Example |
 |---------|---------------|---------------|-----------|-----------|---------|
-| 1       | extend        | uint8_t       | 0         | 1         | 1       |
-| 2       | retract       | uint8_t       | 0         | 1         | 0       |
+| 1       | actuator_state| uint8_t       | 0         | 1         | 1       |
 
 ---
 
@@ -71,3 +77,12 @@ When the pushbutton connected to the microcontroller is pressed, this message is
 | Byte(s) | Variable Name | Variable Type | Min Value | Max Value | Example |
 |---------|---------------|---------------|-----------|-----------|---------|
 | 1       | reset_flag    | uint8_t       | 1         | 1         | 1       |
+
+### Message Example"
+
+# Good Message
+
+AZ, J, L, 4,\x9a\x99\x01B (IEEE 754 floating point number), YB
+
+This includes the proper AZ and YB suffixes, is sent by and received by members of the team (following their letter address), and converts the float value using struct.pack for uart communication.
+
