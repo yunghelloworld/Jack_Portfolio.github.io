@@ -34,7 +34,8 @@ The pressure sensor (Luke) sends the target pressure value. When the target pres
 
 | Byte(s) | Variable Name    | Variable Type | Min Value | Max Value | Example |
 |---------|------------------|---------------|-----------|-----------|---------|
-| 1-4     | target_pressure  | float         | 0.0       | 100.0     | 55.5    |
+| 1        | messagetypeone  | uint8_t          | 1         |   1         |  1       |
+| 2-5     | target_pressure  | ASCII Integer  | 0000 (0.0) | 1000 (100.0) | 0555 (55.5) |
 
 ---
 
@@ -44,7 +45,8 @@ The pressure sensor broadcasts the current pressure reading. This data is used b
 
 | Byte(s) | Variable Name     | Variable Type | Min Value | Max Value | Example |
 |---------|-------------------|---------------|-----------|-----------|---------|
-| 1-4     | current_pressure  | float         | 0.0       | 100.0     | 55.5    |
+| 1        | messagetypetwo  | uint8_t          | 2        |   2         |  2       |
+| 2-5    | current_pressure  | ASCII Integer  | 0000 (0.0) | 1000 (100.0) | 0555 (55.5) |
 
 ---
 
@@ -56,7 +58,8 @@ Upon receiving the target pressure, the actuator sends this value to the OLED di
 
 | Byte(s) | Variable Name    | Variable Type | Min Value | Max Value | Example |
 |---------|------------------|---------------|-----------|-----------|---------|
-| 1-4     | target_pressure  | float         | 0.0       | 100.0     | 55.5   |
+| 1        | messagetypethree  | uint8_t          | 3        |   3        |  3      |
+| 2-5    | target_pressure  | ASCII Integer  | 0000 (0.0) | 1000 (100.0) | 0555 (55.5) |
 
 ---
 
@@ -66,7 +69,8 @@ This command tells the actuator to either extend or retract. The actuator extend
 
 | Byte(s) | Variable Name | Variable Type | Min Value | Max Value | Example |
 |---------|---------------|---------------|-----------|-----------|---------|
-| 1       | actuator_state| uint8_t       | 0         | 1         | 1       |
+| 1       | messagetypefour | uint8_t     | 4         | 4          | 4      |
+| 2       | actuator_state| uint8_t       | 0         | 1         | 1       |
 
 ---
 
@@ -76,13 +80,24 @@ When the pushbutton connected to the microcontroller is pressed, this message is
 
 | Byte(s) | Variable Name | Variable Type | Min Value | Max Value | Example |
 |---------|---------------|---------------|-----------|-----------|---------|
+| 1       | messagetypefive | uint8_t     | 5        | 5          | 5       |
 | 1       | reset_flag    | uint8_t       | 1         | 1         | 1       |
 
 ### Message Example"
 
 # Good Message
 
-AZ, J, L, 4, struck.pack("<f", 34.2), YB
+b'AZLJ10100YB'
 
-This includes the proper AZ and YB suffixes, is sent by and received by members of the team (following their letter address), and converts the float value into IEE754 using struct.pack for uart communication. This is used for message types 1-3 as they use a pressure sensor that needs a greater resolution.
+AZ = Prefix
+
+J = Sender
+
+L = Receiver
+
+1 = Message Type
+
+0100 = sent data (Four Byte 0100 is divided by 10 and turned variable into 10.0)
+
+YB = Suffix
 
