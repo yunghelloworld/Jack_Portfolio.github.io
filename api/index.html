@@ -956,8 +956,8 @@ The pressure sensor (Luke) sends the target pressure value. When the target pres
 </table>
 <h3 id="message-example">Message Example"</h3>
 <h1 id="good-message">Good Message</h1>
-<p>AZ, J, L, 4,\x9a\x99\x01B (IEEE 754 floating point number), YB</p>
-<p>This includes the proper AZ and YB suffixes, is sent by and received by members of the team (following their letter address), and converts the float value using struct.pack for uart communication.</p>
+<p>AZ, J, L, 4, struck.pack("&lt;f", 34.2), YB</p>
+<p>This includes the proper AZ and YB suffixes, is sent by and received by members of the team (following their letter address), and converts the float value into IEE754 using struct.pack for uart communication. This is used for message types 1-3 as they use a pressure sensor that needs a greater resolution.</p>
 
 
 
