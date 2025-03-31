@@ -82,7 +82,7 @@ When the pushbutton connected to the microcontroller is pressed, this message is
 
 # Good Message
 
-AZ, J, L, 4,\x9a\x99\x01B (IEEE 754 floating point number), YB
+AZ, J, L, 4, struck.pack("<f", 34.2), YB
 
-This includes the proper AZ and YB suffixes, is sent by and received by members of the team (following their letter address), and converts the float value using struct.pack for uart communication.
+This includes the proper AZ and YB suffixes, is sent by and received by members of the team (following their letter address), and converts the float value into IEE754 using struct.pack for uart communication. This is used for message types 1-3 as they use a pressure sensor that needs a greater resolution.
 
