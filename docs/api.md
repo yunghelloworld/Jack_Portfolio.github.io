@@ -34,7 +34,7 @@ The pressure sensor (Luke) sends the target pressure value. When the target pres
 
 | Byte(s) | Variable Name    | Variable Type | Min Value | Max Value | Example |
 |---------|------------------|---------------|-----------|-----------|---------|
-| 1        | messagetypeone  | uint8_t          | 1         |   1         |  1       |
+| 1        | messagetypeone  | ASCII Integer        | 1         |   1         |  1       |
 | 2-5     | target_pressure  | ASCII Integer  | 0000 (0.0) | 1000 (100.0) | 0555 (55.5) |
 
 ---
@@ -45,7 +45,7 @@ The pressure sensor broadcasts the current pressure reading. This data is used b
 
 | Byte(s) | Variable Name     | Variable Type | Min Value | Max Value | Example |
 |---------|-------------------|---------------|-----------|-----------|---------|
-| 1        | messagetypetwo  | uint8_t          | 2        |   2         |  2       |
+| 1        | messagetypetwo  |  ASCII Integer        | 2        |   2         |  2       |
 | 2-5    | current_pressure  | ASCII Integer  | 0000 (0.0) | 1000 (100.0) | 0555 (55.5) |
 
 ---
@@ -58,7 +58,7 @@ Upon receiving the target pressure, the actuator sends this value to the OLED di
 
 | Byte(s) | Variable Name    | Variable Type | Min Value | Max Value | Example |
 |---------|------------------|---------------|-----------|-----------|---------|
-| 1        | messagetypethree  | uint8_t          | 3        |   3        |  3      |
+| 1        | messagetypethree  | ASCII Integer         | 3        |   3        |  3      |
 | 2-5    | target_pressure  | ASCII Integer  | 0000 (0.0) | 1000 (100.0) | 0555 (55.5) |
 
 ---
@@ -69,8 +69,8 @@ This command tells the actuator to either extend or retract. The actuator extend
 
 | Byte(s) | Variable Name | Variable Type | Min Value | Max Value | Example |
 |---------|---------------|---------------|-----------|-----------|---------|
-| 1       | messagetypefour | uint8_t     | 4         | 4          | 4      |
-| 2       | actuator_state| uint8_t       | 0         | 1         | 1       |
+| 1       | messagetypefour | ASCII Integer   | 4         | 4          | 4      |
+| 2       | actuator_state| ASCII Integer      | 0         | 1         | 1       |
 
 ---
 
@@ -80,8 +80,8 @@ When the pushbutton connected to the microcontroller is pressed, this message is
 
 | Byte(s) | Variable Name | Variable Type | Min Value | Max Value | Example |
 |---------|---------------|---------------|-----------|-----------|---------|
-| 1       | messagetypefive | uint8_t     | 5        | 5          | 5       |
-| 2       | reset_flag    | uint8_t       | 1         | 1         | 1       |
+| 1       | messagetypefive | ASCII Integer     | 5        | 5          | 5       |
+| 2       | reset_flag    | ASCII Integer       | 1         | 1         | 1       |
 
 ### Message Example"
 
