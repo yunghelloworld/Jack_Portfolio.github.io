@@ -844,12 +844,20 @@ The pressure sensor (Luke) sends the target pressure value. When the target pres
 </thead>
 <tbody>
 <tr>
-<td>1-4</td>
+<td>1</td>
+<td>messagetypeone</td>
+<td>uint8_t</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2-5</td>
 <td>target_pressure</td>
-<td>float</td>
-<td>0.0</td>
-<td>100.0</td>
-<td>55.5</td>
+<td>ASCII Integer</td>
+<td>0000 (0.0)</td>
+<td>1000 (100.0)</td>
+<td>0555 (55.5)</td>
 </tr>
 </tbody>
 </table>
@@ -869,12 +877,20 @@ The pressure sensor (Luke) sends the target pressure value. When the target pres
 </thead>
 <tbody>
 <tr>
-<td>1-4</td>
+<td>1</td>
+<td>messagetypetwo</td>
+<td>uint8_t</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>2-5</td>
 <td>current_pressure</td>
-<td>float</td>
-<td>0.0</td>
-<td>100.0</td>
-<td>55.5</td>
+<td>ASCII Integer</td>
+<td>0000 (0.0)</td>
+<td>1000 (100.0)</td>
+<td>0555 (55.5)</td>
 </tr>
 </tbody>
 </table>
@@ -895,12 +911,20 @@ The pressure sensor (Luke) sends the target pressure value. When the target pres
 </thead>
 <tbody>
 <tr>
-<td>1-4</td>
+<td>1</td>
+<td>messagetypethree</td>
+<td>uint8_t</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>2-5</td>
 <td>target_pressure</td>
-<td>float</td>
-<td>0.0</td>
-<td>100.0</td>
-<td>55.5</td>
+<td>ASCII Integer</td>
+<td>0000 (0.0)</td>
+<td>1000 (100.0)</td>
+<td>0555 (55.5)</td>
 </tr>
 </tbody>
 </table>
@@ -921,6 +945,14 @@ The pressure sensor (Luke) sends the target pressure value. When the target pres
 <tbody>
 <tr>
 <td>1</td>
+<td>messagetypefour</td>
+<td>uint8_t</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>2</td>
 <td>actuator_state</td>
 <td>uint8_t</td>
 <td>0</td>
@@ -946,6 +978,14 @@ The pressure sensor (Luke) sends the target pressure value. When the target pres
 <tbody>
 <tr>
 <td>1</td>
+<td>messagetypefive</td>
+<td>uint8_t</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+</tr>
+<tr>
+<td>1</td>
 <td>reset_flag</td>
 <td>uint8_t</td>
 <td>1</td>
@@ -956,8 +996,13 @@ The pressure sensor (Luke) sends the target pressure value. When the target pres
 </table>
 <h3 id="message-example">Message Example"</h3>
 <h1 id="good-message">Good Message</h1>
-<p>AZ, J, L, 4, struck.pack("&lt;f", 34.2), YB</p>
-<p>This includes the proper AZ and YB suffixes, is sent by and received by members of the team (following their letter address), and converts the float value into IEE754 using struct.pack for uart communication. This is used for message types 1-3 as they use a pressure sensor that needs a greater resolution.</p>
+<p>b'AZLJ10100YB'</p>
+<p>AZ = Prefix</p>
+<p>J = Sender</p>
+<p>L = Receiver</p>
+<p>1 = Message Type</p>
+<p>0100 = sent data (Four Byte 0100 is divided by 10 and turned variable into 10.0)</p>
+<p>YB = Suffix</p>
 
 
 
