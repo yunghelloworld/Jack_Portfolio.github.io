@@ -81,7 +81,7 @@ When the pushbutton connected to the microcontroller is pressed, this message is
 | Byte(s) | Variable Name | Variable Type | Min Value | Max Value | Example |
 |---------|---------------|---------------|-----------|-----------|---------|
 | 1       | messagetypefive | uint8_t     | 5        | 5          | 5       |
-| 1       | reset_flag    | uint8_t       | 1         | 1         | 1       |
+| 2       | reset_flag    | uint8_t       | 1         | 1         | 1       |
 
 ### Message Example"
 
