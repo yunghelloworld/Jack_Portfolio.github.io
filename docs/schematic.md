@@ -8,9 +8,9 @@ tags:
 
 ## Schematic
 
-![Schematic314](https://github.com/user-attachments/assets/f7649206-04ad-4035-afe4-ea1157d4c5d5)
+![UpdatedSchematic](https://github.com/user-attachments/assets/c3405c84-6338-42e2-b3a5-a182e1f01f06)
 
-[EGR314JackSubsystem.pdf](https://github.com/user-attachments/files/19037227/EGR314JackSubsystem.pdf)
+[UpdatedSchematic.pdf](https://github.com/user-attachments/files/19718013/UpdatedSchematic.pdf)
 
 [EGR314JackSubsystem.zip](https://github.com/user-attachments/files/19037228/EGR314JackSubsystem.zip)
 
