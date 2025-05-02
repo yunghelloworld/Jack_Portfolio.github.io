@@ -1,5 +1,5 @@
 ---
-title: Component Selection
+title: Component Selection/Power Budget
 ---
 
 ## This page will discuss the details of the components that my system uses.
@@ -80,3 +80,25 @@ I have decided to go with the ESP32 WROOM as it is a surface mount microcontroll
 
 The EN and 3v3 will be connected, the GND pins will go to the necessary grounds, and the various GPIO pins will encompass PWMs, ADCs, UARTs, and SPIs and will be defined as their respective inputs/outputs.
 
+## Summary of Selected Components
+
+| Component Type     | Part Description              | Manufacturer             | Part Number        | Link                                                                                  |
+| ------------------ | ----------------------------- | ------------------------ | ------------------ | ------------------------------------------------------------------------------------- |
+| **Actuator**       | IP65 Micro Linear Actuator    | Progressive Automations  | PA-MC1             | [Product Page](https://www.progressiveautomations.com/products/pa-mc1?_pos=1&_fid=1a032d801&_ss=c) |
+| **Motor Driver**   | DC Motor Driver               | ON Semiconductor         | NCV7703CD2R2G      | [Digikey](https://www.digikey.com/en/products/detail/onsemi/NCV7703CD2R2G/7325621)    |
+| **Voltage Regulator** | 3.3 V Voltage Regulator    | ON Semiconductor         | LM2575D2T-3.3G     | [Digikey](https://www.digikey.com/en/products/detail/onsemi/LM2575D2T-3-3G/1476686)    |
+| **Microcontroller** | ESP32-S3-WROOM-1 N4 Module   | Espressif Systems        | ESP32-S3-WROOM-1_N4 | [Espressif](https://www.espressif.com/en/producttype/esp32-wroom-32)                   |
+
+## Decision Making
+
+When selecting components, I first checked if the specs of each meshed with what I was planning orignally. I made sure none of the components could draw too much current and that voltage requirements were all kept within a range that allowed for 12V and 3.3V. The actuator was reused from a previous class, and already showed the level of functionality necessary for completing this project. The motor driver was different from the one used in class, as it was more convenient to use the 3.3V logic instead of the 5V logic as there would be less power rails. The ESP32 was chosen for its versatility and ability to be coded in micropython, which was much more familiar me than MPLab, which was necessary if I were to program the PIC.
+
+# Power Budget 
+
+![powerbudget](https://github.com/user-attachments/assets/e3d98c07-2ef0-4be6-97be-7b654522dd6d)
+
+[Power Budget.pdf](https://github.com/user-attachments/files/20018791/Untitled.spreadsheet.-.Power.Budget_removed.pdf)
+
+## Decision Making
+
+The power budget gave me further awareness of how power is distributed throughout me and my team's subsystems. I had to choose a power supply that had a lot more current than my old one, as the max current from each of my components would exceed the max current the power supply could provide. The microcontroller also has a limited amount it can draw, so components directly connected to the microcontroller needed to be curated so that the chip would not be fried from excessive current. A 20% margin for error was included in case of current spikes within the system.
