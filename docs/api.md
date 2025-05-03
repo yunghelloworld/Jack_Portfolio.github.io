@@ -19,7 +19,6 @@ This page documents the API for my actuator subsystem and details the messages g
 
 | Name              | Address |
 |-------------------|---------|
-| Pressure Sensor   | L       |
 | OLED Display      | S       |
 | Actuator          | J       |
 | Broadcast (All)   | X       |
@@ -28,76 +27,43 @@ This page documents the API for my actuator subsystem and details the messages g
 
 ## Messages Received
 
-### Message Type 1: Set Target Pressure
-*Description:*  
-The pressure sensor (Luke) sends the target pressure value. When the target pressure is reached, the actuator will extend
+### Message Type 1: Game Start
+
+The OLED subsystem (Shane) alerts the actuator subsystem when the game has started.
 
 | Byte(s) | Variable Name    | Variable Type | Min Value | Max Value | Example |
 |---------|------------------|---------------|-----------|-----------|---------|
-| 1        | messagetypeone  | ASCII Integer        | 1         |   1         |  1       |
-| 2-5     | target_pressure  | ASCII Integer  | 0000 (0.0) | 1000 (100.0) | 0555 (55.5) |
+| 1        | messagetypeone  | char          | 1         |   1         |  1    |
+| 2        | gamestart      | char           | 0         | 1           | 1     |
 
----
-
-### Message Type 2: Pressure Input
+### Message Type 2: Extend Actuator
   
-The pressure sensor broadcasts the current pressure reading. This data is used by all subsystems; for the actuator, it determines when to extend or retract.
+The OLED subsystem (Shane) sends the actuator subsystem a 0 or a 1. The 0 stops the actuator, the 1 tells the actuator to extend.
 
-| Byte(s) | Variable Name     | Variable Type | Min Value | Max Value | Example |
-|---------|-------------------|---------------|-----------|-----------|---------|
-| 1        | messagetypetwo  |  ASCII Integer        | 2        |   2         |  2       |
-| 2-5    | current_pressure  | ASCII Integer  | 0000 (0.0) | 1000 (100.0) | 0555 (55.5) |
+| Byte(s) | Variable Name    | Variable Type | Min Value | Max Value | Example |
+|---------|------------------|---------------|-----------|-----------|---------|
+| 1        | messagetypetwo  | char         | 2         |   2         |  2       |
+| 2        | extendactuator  | char           | 0        | 1           | 1  |
 
 ---
 
 ## Messages Sent/Broadcasted
 
-### Message Type 3: Display Target Pressure
+### Message Type 3: Change Value
  
-Upon receiving the target pressure, the actuator sends this value to the OLED display (Shane) so that it can be shown on screen to the player.
+Upon receiving a message to extend the actuator, the actuator will extend then wait a second before telling the OLED subsystem to change to a different target value.
 
 | Byte(s) | Variable Name    | Variable Type | Min Value | Max Value | Example |
 |---------|------------------|---------------|-----------|-----------|---------|
-| 1        | messagetypethree  | ASCII Integer         | 3        |   3        |  3      |
-| 2-5    | target_pressure  | ASCII Integer  | 0000 (0.0) | 1000 (100.0) | 0555 (55.5) |
+| 1        | messagetypethree  | char       | 3        |   3        |  3      |
+| 2    | changevalue  | char         | 0            | 1             | 1        |
 
----
-
-### Message Type 4: Actuator Control
+### Message Type 4: Victory/Reset
 
 This command tells the actuator to either extend or retract. The actuator extends when the pressure input equals the target pressure and retracts if the target is missed within time limit.
 
 | Byte(s) | Variable Name | Variable Type | Min Value | Max Value | Example |
 |---------|---------------|---------------|-----------|-----------|---------|
-| 1       | messagetypefour | ASCII Integer   | 4         | 4          | 4      |
-| 2       | actuator_state| ASCII Integer      | 0         | 1         | 1       |
-
----
-
-### Message Type 5: Stop Game and Reset
-  
-When the pushbutton connected to the microcontroller is pressed, this message is broadcast to all subsystems to stop the game and reset the system.
-
-| Byte(s) | Variable Name | Variable Type | Min Value | Max Value | Example |
-|---------|---------------|---------------|-----------|-----------|---------|
-| 1       | messagetypefive | ASCII Integer     | 5        | 5          | 5       |
-| 2       | reset_flag    | ASCII Integer       | 1         | 1         | 1       |
-
-### Message Example"
-
-# Good Message
-
-b'AZLJ10100YB'
-
-AZ = Prefix
-
-J = Sender
-
-L = Receiver
-
-1 = Message Type
-
-0100 = sent data (Four Byte 0100 is divided by 10 and turned variable into 10.0)
-
-YB = Suffix
+| 1       | messagetypefour | char   | 4         | 4          | 4      |
+| 2       | resetflag    | char     | 0         | 1         | 1       |
 
