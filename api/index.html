@@ -464,15 +464,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#message-type-1-set-target-pressure" class="md-nav__link">
-    Message Type 1: Set Target Pressure
+  <a href="#message-type-1-game-start" class="md-nav__link">
+    Message Type 1: Game Start
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#message-type-2-pressure-input" class="md-nav__link">
-    Message Type 2: Pressure Input
+  <a href="#message-type-2-extend-actuator" class="md-nav__link">
+    Message Type 2: Extend Actuator
   </a>
   
 </li>
@@ -491,29 +491,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#message-type-3-display-target-pressure" class="md-nav__link">
-    Message Type 3: Display Target Pressure
+  <a href="#message-type-3-change-value" class="md-nav__link">
+    Message Type 3: Change Value
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#message-type-4-actuator-control" class="md-nav__link">
-    Message Type 4: Actuator Control
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#message-type-5-stop-game-and-reset" class="md-nav__link">
-    Message Type 5: Stop Game and Reset
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#message-example" class="md-nav__link">
-    Message Example"
+  <a href="#message-type-4-victoryreset" class="md-nav__link">
+    Message Type 4: Victory/Reset
   </a>
   
 </li>
@@ -699,15 +685,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#message-type-1-set-target-pressure" class="md-nav__link">
-    Message Type 1: Set Target Pressure
+  <a href="#message-type-1-game-start" class="md-nav__link">
+    Message Type 1: Game Start
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#message-type-2-pressure-input" class="md-nav__link">
-    Message Type 2: Pressure Input
+  <a href="#message-type-2-extend-actuator" class="md-nav__link">
+    Message Type 2: Extend Actuator
   </a>
   
 </li>
@@ -726,29 +712,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#message-type-3-display-target-pressure" class="md-nav__link">
-    Message Type 3: Display Target Pressure
+  <a href="#message-type-3-change-value" class="md-nav__link">
+    Message Type 3: Change Value
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#message-type-4-actuator-control" class="md-nav__link">
-    Message Type 4: Actuator Control
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#message-type-5-stop-game-and-reset" class="md-nav__link">
-    Message Type 5: Stop Game and Reset
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#message-example" class="md-nav__link">
-    Message Example"
+  <a href="#message-type-4-victoryreset" class="md-nav__link">
+    Message Type 4: Victory/Reset
   </a>
   
 </li>
@@ -809,10 +781,6 @@
 </thead>
 <tbody>
 <tr>
-<td>Pressure Sensor</td>
-<td>L</td>
-</tr>
-<tr>
 <td>OLED Display</td>
 <td>S</td>
 </tr>
@@ -828,9 +796,8 @@
 </table>
 <hr />
 <h2 id="messages-received">Messages Received</h2>
-<h3 id="message-type-1-set-target-pressure">Message Type 1: Set Target Pressure</h3>
-<p><em>Description:</em><br />
-The pressure sensor (Luke) sends the target pressure value. When the target pressure is reached, the actuator will extend</p>
+<h3 id="message-type-1-game-start">Message Type 1: Game Start</h3>
+<p>The OLED subsystem (Shane) alerts the actuator subsystem when the game has started.</p>
 <table>
 <thead>
 <tr>
@@ -846,24 +813,23 @@ The pressure sensor (Luke) sends the target pressure value. When the target pres
 <tr>
 <td>1</td>
 <td>messagetypeone</td>
-<td>ASCII Integer</td>
+<td>char</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 </tr>
 <tr>
-<td>2-5</td>
-<td>target_pressure</td>
-<td>ASCII Integer</td>
-<td>0000 (0.0)</td>
-<td>1000 (100.0)</td>
-<td>0555 (55.5)</td>
+<td>2</td>
+<td>gamestart</td>
+<td>char</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h3 id="message-type-2-pressure-input">Message Type 2: Pressure Input</h3>
-<p>The pressure sensor broadcasts the current pressure reading. This data is used by all subsystems; for the actuator, it determines when to extend or retract.</p>
+<h3 id="message-type-2-extend-actuator">Message Type 2: Extend Actuator</h3>
+<p>The OLED subsystem (Shane) sends the actuator subsystem a 0 or a 1. The 0 stops the actuator, the 1 tells the actuator to extend.</p>
 <table>
 <thead>
 <tr>
@@ -879,25 +845,25 @@ The pressure sensor (Luke) sends the target pressure value. When the target pres
 <tr>
 <td>1</td>
 <td>messagetypetwo</td>
-<td>ASCII Integer</td>
+<td>char</td>
 <td>2</td>
 <td>2</td>
 <td>2</td>
 </tr>
 <tr>
-<td>2-5</td>
-<td>current_pressure</td>
-<td>ASCII Integer</td>
-<td>0000 (0.0)</td>
-<td>1000 (100.0)</td>
-<td>0555 (55.5)</td>
+<td>2</td>
+<td>extendactuator</td>
+<td>char</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
 </tr>
 </tbody>
 </table>
 <hr />
 <h2 id="messages-sentbroadcasted">Messages Sent/Broadcasted</h2>
-<h3 id="message-type-3-display-target-pressure">Message Type 3: Display Target Pressure</h3>
-<p>Upon receiving the target pressure, the actuator sends this value to the OLED display (Shane) so that it can be shown on screen to the player.</p>
+<h3 id="message-type-3-change-value">Message Type 3: Change Value</h3>
+<p>Upon receiving a message to extend the actuator, the actuator will extend then wait a second before telling the OLED subsystem to change to a different target value.</p>
 <table>
 <thead>
 <tr>
@@ -913,23 +879,22 @@ The pressure sensor (Luke) sends the target pressure value. When the target pres
 <tr>
 <td>1</td>
 <td>messagetypethree</td>
-<td>ASCII Integer</td>
+<td>char</td>
 <td>3</td>
 <td>3</td>
 <td>3</td>
 </tr>
 <tr>
-<td>2-5</td>
-<td>target_pressure</td>
-<td>ASCII Integer</td>
-<td>0000 (0.0)</td>
-<td>1000 (100.0)</td>
-<td>0555 (55.5)</td>
+<td>2</td>
+<td>changevalue</td>
+<td>char</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h3 id="message-type-4-actuator-control">Message Type 4: Actuator Control</h3>
+<h3 id="message-type-4-victoryreset">Message Type 4: Victory/Reset</h3>
 <p>This command tells the actuator to either extend or retract. The actuator extends when the pressure input equals the target pressure and retracts if the target is missed within time limit.</p>
 <table>
 <thead>
@@ -946,63 +911,21 @@ The pressure sensor (Luke) sends the target pressure value. When the target pres
 <tr>
 <td>1</td>
 <td>messagetypefour</td>
-<td>ASCII Integer</td>
+<td>char</td>
 <td>4</td>
 <td>4</td>
 <td>4</td>
 </tr>
 <tr>
 <td>2</td>
-<td>actuator_state</td>
-<td>ASCII Integer</td>
+<td>resetflag</td>
+<td>char</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h3 id="message-type-5-stop-game-and-reset">Message Type 5: Stop Game and Reset</h3>
-<p>When the pushbutton connected to the microcontroller is pressed, this message is broadcast to all subsystems to stop the game and reset the system.</p>
-<table>
-<thead>
-<tr>
-<th>Byte(s)</th>
-<th>Variable Name</th>
-<th>Variable Type</th>
-<th>Min Value</th>
-<th>Max Value</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>messagetypefive</td>
-<td>ASCII Integer</td>
-<td>5</td>
-<td>5</td>
-<td>5</td>
-</tr>
-<tr>
-<td>2</td>
-<td>reset_flag</td>
-<td>ASCII Integer</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-<h3 id="message-example">Message Example"</h3>
-<h1 id="good-message">Good Message</h1>
-<p>b'AZLJ10100YB'</p>
-<p>AZ = Prefix</p>
-<p>J = Sender</p>
-<p>L = Receiver</p>
-<p>1 = Message Type</p>
-<p>0100 = sent data (Four Byte 0100 is divided by 10 and turned variable into 10.0)</p>
-<p>YB = Suffix</p>
 
 
 
