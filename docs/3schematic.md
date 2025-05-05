@@ -1,5 +1,5 @@
 ---
-title: Schematic/BOM
+title: Schematic/PCB/BOM
 tags:
 - tag1
 - tag2
