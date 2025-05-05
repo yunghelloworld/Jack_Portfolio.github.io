@@ -78,7 +78,7 @@ I have decided to go with the ESP32 WROOM as it is a surface mount microcontroll
 
 ![AR3260-ESP32-S3-WROOM-1-N16R8-16MB-FLASH-8MB-PSRAM-Pinout](https://github.com/user-attachments/assets/05aadfef-9e8a-4a68-974e-4e48876619f8)
 
-The EN and 3v3 will be connected, the GND pins will go to the necessary grounds, and the various GPIO pins will encompass PWMs, ADCs, UARTs, and SPIs and will be defined as their respective inputs/outputs.
+The 3.3 will receive 3.3V, and 3.3V will be supplied to EN and BOOT with a pushbutton that can pull them to GND if necessary. The GND pins will go to the necessary grounds, and the various GPIO pins will encompass the SPI and generic inputs and outputs. RX and TX will be connected to the 8 pin daisy chain in order to foster communication.
 
 ## Summary of Selected Components
 
