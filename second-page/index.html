@@ -1009,7 +1009,7 @@
 <p>* The ESP32-S2 has multiple SPI interfaces, but some are for internal use</p>
 <p>I have decided to go with the ESP32 WROOM as it is a surface mount microcontroller that provides all the necessary ports for my project, as it includes various PWM, SPI, UART, and GPIO pins, and transfers information at a high speed, making it ideal to use when communicating with the other subsystems my team has.</p>
 <p><a class="glightbox" href="https://github.com/user-attachments/assets/05aadfef-9e8a-4a68-974e-4e48876619f8" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="AR3260-ESP32-S3-WROOM-1-N16R8-16MB-FLASH-8MB-PSRAM-Pinout" src="https://github.com/user-attachments/assets/05aadfef-9e8a-4a68-974e-4e48876619f8" /></a></p>
-<p>The EN and 3v3 will be connected, the GND pins will go to the necessary grounds, and the various GPIO pins will encompass PWMs, ADCs, UARTs, and SPIs and will be defined as their respective inputs/outputs.</p>
+<p>The 3.3 will receive 3.3V, and 3.3V will be supplied to EN and BOOT with a pushbutton that can pull them to GND if necessary. The GND pins will go to the necessary grounds, and the various GPIO pins will encompass the SPI and generic inputs and outputs. RX and TX will be connected to the 8 pin daisy chain in order to foster communication.</p>
 <h2 id="summary-of-selected-components">Summary of Selected Components</h2>
 <table>
 <thead>
