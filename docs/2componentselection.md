@@ -2,6 +2,8 @@
 title: Component Selection/Power Budget
 ---
 
+hi
+
 ## Actuator
 
 An actuator will be used to add more visual interest to our exhibit. When an audience member gains a point, the actuator will extend, and when an audience member loses the point, the actuator will retract. When the actuator hits a pushbutton (also assigned to my subsystem) it will send a message to the display confirming that the audience member has won the game and the actuator will retract to its original position. Here are a few possible solutions.
