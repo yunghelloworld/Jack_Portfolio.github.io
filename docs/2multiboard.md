@@ -18,3 +18,6 @@ Here are the final diagrams for our project
 
 # My PCB Bottom Layer
 <img width="951" height="677" alt="440073788-c84e5472-968a-4ab8-b1ad-a87684671a96" src="https://github.com/user-attachments/assets/5036b5c3-b3f6-49bc-8b9c-08757e1f0541" />
+
+# Block Diagram
+<img width="1511" height="641" alt="436682010-d6e47f94-231a-4d55-a046-69b31c67baba" src="https://github.com/user-attachments/assets/33ad6355-615d-4878-9d21-aecb740300e9" />
