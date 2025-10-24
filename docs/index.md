@@ -5,6 +5,6 @@ tags:
 - tag2
 ---
 
-## I am Jack Francis, a member of Team 302
+## I am Jack Francis, a Robotics Engineer at ASU Polytechnic
 
-Here you will find media showcasing the progress of my work on my individual subsystem for my team.
+Here I have showcased projects I have worked on academically and personally, exhibiting a wide range of skills that I hope to apply in my career.
