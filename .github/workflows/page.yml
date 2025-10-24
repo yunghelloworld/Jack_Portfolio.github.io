@@ -29,7 +29,7 @@ jobs:
         uses: Tiryoh/actions-mkdocs@v0
         with:
       # mkdocs_version: 'latest' # latest means latest for the base ubuntu image. You should peg it to a specific version for best results.
-          mkdocs_version: '1.5.4' # option (compatible with mkdocs-material 9.5.18)
+          mkdocs_version: '1.5.3' # option (compatible with mkdocs-material 9.5.18)
           requirements: 'requirements.txt' # option
           configfile: 'mkdocs.yml' # option
 
