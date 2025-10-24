@@ -10,12 +10,9 @@ The Synthbox9000 is a digital synthesizer that interprets MIDI data and outputs 
 Here are the PCB layers and schematic diagram detailing the wirings between each component of the system.
 
 # Schematic
-<img width="2256" height="1792" alt="Screenshot_59" src="https://github.com/user-attachments/assets/36790214-b152-4850-aac4-3eec2e5dbae7" />
 
 # Top Layer
-<img width="2578" height="1792" alt="Screenshot_56" src="https://github.com/user-attachments/assets/c90d3f09-4f54-4f4d-9b36-8dab1c0bd314" />
 
 # Bottom Layer
-<img width="2277" height="1811" alt="Screenshot_57" src="https://github.com/user-attachments/assets/6c8fbed0-2c8d-4dbc-b085-496c80a725b1" />
 
 So far, the system is able to output polyphonic audio but is grainy and scratchy when it comes to non-octave values. We expect this is due to either an inefficient algorithm or lack of memory located on the ESP32 flash. We are looking into switching to wavetable synthesis which utilizes shorter samples (saves memory) and an ADSR algorithm for dynamics.
