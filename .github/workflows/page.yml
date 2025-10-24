@@ -14,24 +14,29 @@ on:
 jobs:
 
   build:
-    name: build mkdocs
     runs-on: ubuntu-latest
     steps:
-    
-      - uses: actions/setup-python@v4
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v4
         with:
           python-version: '3.9'
-    
-      - name: Checkout
-        uses: actions/checkout@v4
 
-      - name: Build
-        uses: Tiryoh/actions-mkdocs@v0
-        with:
-      # mkdocs_version: 'latest' # latest means latest for the base ubuntu image. You should peg it to a specific version for best results.
-          mkdocs_version: '1.5.3' # option (compatible with mkdocs-material 9.5.18)
-          requirements: 'requirements.txt' # option
-          configfile: 'mkdocs.yml' # option
+      - name: Create virtualenv and install dependencies
+        run: |
+          python -m venv .venv
+          . .venv/bin/activate
+          python -m pip install --upgrade pip setuptools wheel
+          # Option 1: install from requirements.txt (recommended only after you confirm pins)
+          pip install -r requirements.txt
+          # OR Option 2: explicit install (ensures consistent ordering)
+          # pip install mkdocs==1.5.3 mkdocs-material==9.5.18 mkdocs-rss-plugin==1.17.4
+
+      - name: Build site
+        run: |
+          . .venv/bin/activate
+          mkdocs build -f mkdocs.yml -d site
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
@@ -39,4 +44,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
           allow_empty_commit: true
-
