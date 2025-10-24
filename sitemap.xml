@@ -2,47 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://embedded-systems-design.github.io/template_report/</loc>
-         <lastmod>2025-05-05</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
-         <loc>https://embedded-systems-design.github.io/template_report/1blockdiagram/</loc>
-         <lastmod>2025-05-05</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://embedded-systems-design.github.io/template_report/1synthbox9000/</loc>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
-         <loc>https://embedded-systems-design.github.io/template_report/2componentselection/</loc>
-         <lastmod>2025-05-05</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://embedded-systems-design.github.io/template_report/2multiboard/</loc>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://embedded-systems-design.github.io/template_report/3schematic/</loc>
-         <lastmod>2025-05-05</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://embedded-systems-design.github.io/template_report/4api/</loc>
-         <lastmod>2025-05-05</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://embedded-systems-design.github.io/template_report/5resources/</loc>
-         <lastmod>2025-05-05</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://embedded-systems-design.github.io/template_report/static/node_modules/mathjax/</loc>
-         <lastmod>2025-05-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://embedded-systems-design.github.io/template_report/subfolder/</loc>
-         <lastmod>2025-05-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://embedded-systems-design.github.io/template_report/subfolder/another-subfile/</loc>
-         <lastmod>2025-05-05</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-10-24</lastmod>
     </url>
 </urlset>

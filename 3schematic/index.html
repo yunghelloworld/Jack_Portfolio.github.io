@@ -1,10 +1,7 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
 
-<meta name="robots" content="nofollow" />
+<meta name="robots" content="nofollow">
 
 
       <meta charset="utf-8">
@@ -15,14 +12,14 @@
         <link rel="canonical" href="https://embedded-systems-design.github.io/template_report/3schematic/">
       
       
-        <link rel="prev" href="../2componentselection/">
+        <link rel="prev" href="../2multiboard/">
       
       
         <link rel="next" href="../4api/">
       
       
       <link rel="icon" href="../static/logo.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.4.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.18">
             
 
         
@@ -33,10 +30,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.9f615399.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.66ac8b77.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.649f08f9.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,7 +47,7 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -66,16 +63,17 @@
     
 
 
-   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
-    html.glightbox-open { overflow: initial; height: 100%; }
-    .gslide-title { margin-top: 0px; user-select: text; }
-    .gslide-desc { color: #666; user-select: text; }
-    .gslide-image img { background: white; }
-    .gscrollbar-fixer { padding-right: 15px; }
-    .gdesc-inner { font-size: 0.75rem; }
-    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
-    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     
@@ -85,7 +83,6 @@
     
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
   
-    
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -116,7 +113,7 @@
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -139,9 +136,10 @@
     
     
     
+    
       <label class="md-header__button md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -150,15 +148,15 @@
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
         </button>
       </nav>
       
@@ -181,7 +179,7 @@
         <a href="https://github.com/embedded-systems-design/template_report" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -219,12 +217,12 @@
   
   
     <li class="md-tabs__item">
-      <a href="../1blockdiagram/" class="md-tabs__link">
+      <a href="../1synthbox9000/" class="md-tabs__link">
         
   
     
   
-  Block Diagram
+  Synthbox9000
 
       </a>
     </li>
@@ -236,12 +234,12 @@
   
   
     <li class="md-tabs__item">
-      <a href="../2componentselection/" class="md-tabs__link">
+      <a href="../2multiboard/" class="md-tabs__link">
         
   
     
   
-  Component Selection/Power Budget
+  Multi-Board Embedded System Game
 
       </a>
     </li>
@@ -301,26 +299,6 @@
   
 
       
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../subfolder/" class="md-tabs__link">
-          
-  
-    
-  
-  Subfolder
-
-        </a>
-      </li>
-    
-  
-
-      
     </ul>
   </div>
 </nav>
@@ -338,7 +316,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -361,7 +339,7 @@
       <a href="https://github.com/embedded-systems-design/template_report" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -373,6 +351,7 @@
     
       
       
+  
   
   
   
@@ -395,12 +374,13 @@
   
   
   
+  
     <li class="md-nav__item">
-      <a href="../1blockdiagram/" class="md-nav__link">
+      <a href="../1synthbox9000/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Block Diagram
+    Synthbox9000
   </span>
   
 
@@ -414,12 +394,13 @@
   
   
   
+  
     <li class="md-nav__item">
-      <a href="../2componentselection/" class="md-nav__link">
+      <a href="../2multiboard/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Component Selection/Power Budget
+    Multi-Board Embedded System Game
   </span>
   
 
@@ -433,6 +414,7 @@
   
   
     
+  
   
   
     <li class="md-nav__item md-nav__item--active">
@@ -477,7 +459,9 @@
       
         <li class="md-nav__item">
   <a href="#schematicpcb" class="md-nav__link">
-    Schematic/PCB
+    <span class="md-ellipsis">
+      Schematic/PCB
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Schematic/PCB">
@@ -485,7 +469,9 @@
         
           <li class="md-nav__item">
   <a href="#schematic" class="md-nav__link">
-    Schematic
+    <span class="md-ellipsis">
+      Schematic
+    </span>
   </a>
   
 </li>
@@ -497,7 +483,9 @@
       
         <li class="md-nav__item">
   <a href="#pcb" class="md-nav__link">
-    PCB
+    <span class="md-ellipsis">
+      PCB
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="PCB">
@@ -505,21 +493,27 @@
         
           <li class="md-nav__item">
   <a href="#top" class="md-nav__link">
-    Top
+    <span class="md-ellipsis">
+      Top
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#bottom" class="md-nav__link">
-    Bottom
+    <span class="md-ellipsis">
+      Bottom
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#gerber" class="md-nav__link">
-    Gerber
+    <span class="md-ellipsis">
+      Gerber
+    </span>
   </a>
   
 </li>
@@ -531,14 +525,18 @@
       
         <li class="md-nav__item">
   <a href="#version-20" class="md-nav__link">
-    Version 2.0
+    <span class="md-ellipsis">
+      Version 2.0
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#bill-of-materials" class="md-nav__link">
-    Bill of Materials
+    <span class="md-ellipsis">
+      Bill of Materials
+    </span>
   </a>
   
 </li>
@@ -553,6 +551,7 @@
     
       
       
+  
   
   
   
@@ -575,6 +574,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../5resources/" class="md-nav__link">
         
@@ -589,49 +589,6 @@
   
 
     
-      
-      
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-    
-    
-      
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-    <a href="../subfolder/" class="md-nav__link">
-      
-  
-  <span class="md-ellipsis">
-    Subfolder
-  </span>
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -640,7 +597,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -658,7 +615,9 @@
       
         <li class="md-nav__item">
   <a href="#schematicpcb" class="md-nav__link">
-    Schematic/PCB
+    <span class="md-ellipsis">
+      Schematic/PCB
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Schematic/PCB">
@@ -666,7 +625,9 @@
         
           <li class="md-nav__item">
   <a href="#schematic" class="md-nav__link">
-    Schematic
+    <span class="md-ellipsis">
+      Schematic
+    </span>
   </a>
   
 </li>
@@ -678,7 +639,9 @@
       
         <li class="md-nav__item">
   <a href="#pcb" class="md-nav__link">
-    PCB
+    <span class="md-ellipsis">
+      PCB
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="PCB">
@@ -686,21 +649,27 @@
         
           <li class="md-nav__item">
   <a href="#top" class="md-nav__link">
-    Top
+    <span class="md-ellipsis">
+      Top
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#bottom" class="md-nav__link">
-    Bottom
+    <span class="md-ellipsis">
+      Bottom
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#gerber" class="md-nav__link">
-    Gerber
+    <span class="md-ellipsis">
+      Gerber
+    </span>
   </a>
   
 </li>
@@ -712,14 +681,18 @@
       
         <li class="md-nav__item">
   <a href="#version-20" class="md-nav__link">
-    Version 2.0
+    <span class="md-ellipsis">
+      Version 2.0
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#bill-of-materials" class="md-nav__link">
-    Bill of Materials
+    <span class="md-ellipsis">
+      Bill of Materials
+    </span>
   </a>
   
 </li>
@@ -741,7 +714,7 @@
   
     <a href="https://github.com/embedded-systems-design/template_report/edit/main/docs/3schematic.md" title="Edit this page" class="md-content__button md-icon">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"></path></svg>
     </a>
   
   
@@ -751,22 +724,32 @@
 
 <h2 id="schematicpcb">Schematic/PCB</h2>
 <h3 id="schematic">Schematic</h3>
-<p><a class="glightbox" href="https://github.com/user-attachments/assets/c3405c84-6338-42e2-b3a5-a182e1f01f06" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="UpdatedSchematic" src="https://github.com/user-attachments/assets/c3405c84-6338-42e2-b3a5-a182e1f01f06" /></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://github.com/user-attachments/assets/c3405c84-6338-42e2-b3a5-a182e1f01f06" data-desc-position="bottom"><img alt="UpdatedSchematic" src="https://github.com/user-attachments/assets/c3405c84-6338-42e2-b3a5-a182e1f01f06"></a></p>
 <p><a href="https://github.com/user-attachments/files/19718013/UpdatedSchematic.pdf">UpdatedSchematic.pdf</a></p>
 <p>This schematic includes all the basic circuity needed to run 12V to an actuator while simultaneously providing 3.3V to necessary logic supplies. The voltage regulator is crucial in providing this. Necessary inductors and capacitors are included to induce stability in the voltage regulator. Jumpers, headers, pushbuttons, and LEDs are included to test connectivity and other debugging. EN and BOOT connected to 3.3V with a pull-up and a pushbutton which can pull it to GND. All SPI pins are connected to the microcontroller so it can control all the logic the motordriver receives. The microcontroller will send data through the TX pin and receive through the RX pin, connected to the 8 pin daisy chain connector designed to communicate with the team. The received data will cause the microcontroller to send a signal to the motor driver which will extend or retract the actuator. This will be used so the actuator becomes a progress bar for the user to indicate how close they are to winning the game.</p>
 <h2 id="pcb">PCB</h2>
 <h3 id="top">Top</h3>
-<p><a class="glightbox" href="https://github.com/user-attachments/assets/7dea54d6-c8b3-4bd8-8218-05ad9ac733f5" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="TOP" src="https://github.com/user-attachments/assets/7dea54d6-c8b3-4bd8-8218-05ad9ac733f5" /></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://github.com/user-attachments/assets/7dea54d6-c8b3-4bd8-8218-05ad9ac733f5" data-desc-position="bottom"><img alt="TOP" src="https://github.com/user-attachments/assets/7dea54d6-c8b3-4bd8-8218-05ad9ac733f5"></a></p>
 <h3 id="bottom">Bottom</h3>
-<p><a class="glightbox" href="https://github.com/user-attachments/assets/c84e5472-968a-4ab8-b1ad-a87684671a96" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="BOTTOM" src="https://github.com/user-attachments/assets/c84e5472-968a-4ab8-b1ad-a87684671a96" /></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://github.com/user-attachments/assets/c84e5472-968a-4ab8-b1ad-a87684671a96" data-desc-position="bottom"><img alt="BOTTOM" src="https://github.com/user-attachments/assets/c84e5472-968a-4ab8-b1ad-a87684671a96"></a></p>
 <p><a href="https://github.com/user-attachments/files/19037228/EGR314JackSubsystem.zip">UpdatedEGR314JackSubsystem.zip</a></p>
 <h3 id="gerber">Gerber</h3>
 <p><a href="https://github.com/user-attachments/files/20019133/PCBArt.zip">PCBArt.zip</a></p>
 <h2 id="version-20">Version 2.0</h2>
 <p>Working on this schematic extensively, I have learned a decent amount of things about schematic and PCB design. To start with the basics, I would have included a more basic pushbutton instead of a pushbutton you would have to push twice. It is not a significant change, but it reflects the devkit version's design more and is more intuitive to work with. Other things I would add would be a greater abundance of headers and jumpers. I originally was not sure how exactly they were supposed to function, and just thought it would clutter up my board, but after gaining knowledge of proper ways to debug boards and reroute signals and attach outside components, I became very aware of the potential they have within the system. I included a few on extraneous GPIO pins as test points, but if I were to redesign it, I would have put a jumper on nearly all my signal pins, especially the ones that connect to my motordriver. When I first printed the board, half of my motordriver's pads were backwards, which meant there had to be a lot of jumper wires attached to the pins that would've been backwards. This was a great struggle, as the surface mount motordriver I had purchased was very small, with pin widths being just over a millimeter. Having to bend those pins up and attach wires to their tiny surfaces without accidentally jumping adjacent took much longer and was a lot more stressful and dangerous to the system than if i had just included headers to jump pins to their correct locations again. I would also utilize a better USB component, as the vertical facing USB was scary to use compared to a horizontal facing one which would have more stability. I would also tried to have get a larger motordriver and a larger diode, as they were hard to solder on by hand. I would also try to include a silkscreen next time, because it was hard to gauge the size of the components outside of the pins, which made the inductor hard to fit in on the board with the rest of the voltage reglator circuit. I would try to be more economical but safe with the spacing, so make the layout more compact and easy to understand. I would make the vias larger in diameter, so that way they could be used as header holes too if necessary. I would also put the pins connecting the motordriver outs to the actuator closer together. I had placed them fart apart, but realized the wires of my actuator were locked togther by the connector, meaning I would have to use extra jumpers to connect it, making it less resource efficient. I would also space out the non-dedicated pins more, so if I accidentally shorted pins while soldering, it would be mostly irrelevant as the utilized GPIO pins would not be interfered with.</p>
 <h2 id="bill-of-materials">Bill of Materials</h2>
-<p><a class="glightbox" href="https://github.com/user-attachments/assets/dd65f450-a2be-45d4-a92f-9911e784e9a7" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Bill of Materials" src="https://github.com/user-attachments/assets/dd65f450-a2be-45d4-a92f-9911e784e9a7" /></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://github.com/user-attachments/assets/dd65f450-a2be-45d4-a92f-9911e784e9a7" data-desc-position="bottom"><img alt="Bill of Materials" src="https://github.com/user-attachments/assets/dd65f450-a2be-45d4-a92f-9911e784e9a7"></a></p>
 <p><a href="https://github.com/user-attachments/files/20019168/FinalBillOfMaterials.-.Purchase.Request.pdf">FinalBillOfMaterials - Purchase Request.pdf</a></p>
+
+
+
+
+
+
+
+  
+  
+
 
 
 
@@ -777,13 +760,14 @@
             </div>
           
           
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
-            
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
-            Back to top
-          </button>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"></path></svg>
+  Back to top
+</button>
         
       </main>
       
@@ -791,27 +775,27 @@
   
     
       
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
-          <a href="../2componentselection/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Component Selection/Power Budget" rel="prev">
+          <a href="../2multiboard/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Multi-Board Embedded System Game">
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
             </div>
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Previous
               </span>
               <div class="md-ellipsis">
-                Component Selection/Power Budget
+                Multi-Board Embedded System Game
               </div>
             </div>
           </a>
         
         
           
-          <a href="../4api/" class="md-footer__link md-footer__link--next" aria-label="Next: API" rel="next">
+          <a href="../4api/" class="md-footer__link md-footer__link--next" aria-label="Next: API">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
@@ -822,7 +806,7 @@
             </div>
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
             </div>
           </a>
         
@@ -834,7 +818,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2024 team-name-here
+      Copyright © 2024 team-name-here
     </div>
   
   
@@ -847,7 +831,7 @@
     
     
     <a href="/2023_fall" target="_blank" rel="noopener" title="2023 Site" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16h160v80c0 17.7 14.3 32 32 32h80v288c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64v384c0 35.3 28.7 64 64 64h256c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3l-90.6-90.5C262.7 6.7 246.5 0 229.5 0H64zm97 289c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0L79 303c-9.4 9.4-9.4 24.6 0 33.9l48 48c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-31-31 31-31zm96-34c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l31 31-31 31c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l48-48c9.4-9.4 9.4-24.6 0-33.9l-48-48z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16h160v80c0 17.7 14.3 32 32 32h80v288c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64v384c0 35.3 28.7 64 64 64h256c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3l-90.6-90.5C262.7 6.7 246.5 0 229.5 0H64zm97 289c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0L79 303c-9.4 9.4-9.4 24.6 0 33.9l48 48c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-31-31 31-31zm96-34c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l31 31-31 31c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l48-48c9.4-9.4 9.4-24.6 0-33.9l-48-48z"></path></svg>
     </a>
   
 </div>
@@ -861,17 +845,18 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "toc.follow", "navigation.top", "navigation.path", "navigation.indexes", "navigation.prune", "content.action.edit", "navigation.footer"], "search": "../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "toc.follow", "navigation.top", "navigation.path", "navigation.indexes", "navigation.prune", "content.action.edit", "navigation.footer"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.4e0fa4ba.min.js"></script>
+      <script src="../assets/javascripts/bundle.3220b9d7.min.js"></script>
       
         <script src="../javascripts/mathjax.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
-  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
-document$.subscribe(() => { lightbox.reload() });
-</script></body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
