@@ -8,7 +8,7 @@ This is an academic project where I worked with a team mate to create a interact
 
 Originally this project was designed to be a pitch recreation game, where the display showed a desired frequency and an actual frequency represented by a horizontal line (desired) and a bar going up and down (actual). The user would sing the pitch into the microphone and when reached for a certain amount of time, would activate the actuator to move forward a little and reset the desired frequency position. After the actuator moves far enough, it would reset its position and display the victory screen on the display. This was not achieved due one team member being banned from campus, and the other team member not being able to contribute, depriving us of multiple subsytems necessary to finish this concept. Despite this, my and my other team mate were able to create a functional game using our individual assigned subsystems within the project deadline.
 
-Here are the final diagrams for our project
+Here are the final diagrams for our project:
 
 # My Schematic
 <img width="1162" height="860" alt="433014086-c3405c84-6338-42e2-b3a5-a182e1f01f06 (1)" src="https://github.com/user-attachments/assets/76075da1-11ae-4cc1-a5e1-487b35432427" />
